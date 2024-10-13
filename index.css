@@ -69,8 +69,8 @@ nav ul a {
 
 .hero {
     text-align: center;
-    margin: 50px auto 0;
-    padding-bottom: 50px;
+    margin: 0 auto ;
+    padding: 30px 0;
     border-bottom: 1px solid black;
 }
 
@@ -108,14 +108,16 @@ nav ul a {
 }
 
 .mid-section h2,
-h1,
-a {
+.mid-section h1,
+.mid-section a {
     font-weight: 500;
     font-size: 0.8em;
     padding: 1em 1em;
     margin: 0;
 }
-
+.mid-section h1 {
+    font-size: 1rem;
+}
 .projects h2 {
     border-bottom: 1px solid black;
 }
