@@ -1,0 +1,256 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    min-height: 100dvh;
+    margin: 0;
+}
+
+.container {
+    min-width: 600px;
+    max-width: 710px;
+    width: 80%;
+    border: 3px solid black;
+    margin: auto;
+    font-family: "Roboto", sans-serif;
+}
+
+.style {
+    font-family: "Sedgwick Ave", cursive;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    font-size: 0.9em;
+}
+
+header h1 {
+    font-size: 1.1em;
+    font-weight: 400;
+}
+
+header>div {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+
+}
+
+.box {
+    height: 30px;
+    width: 30px;
+    background-color: black;
+}
+
+nav>ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.hero {
+    text-align: center;
+    margin: 50px auto 0;
+    padding-bottom: 50px;
+    border-bottom: 1px solid black;
+}
+
+.hero h1 {
+    font-size: 2.2em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 0.8em;
+    color: gray;
+    margin-top: 8px;
+}
+
+.mid-section {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1.3fr;
+
+}
+
+.mid-section h1 {
+    font-size: 1em;
+    margin: 0 0 7px;
+}
+
+.mid-section ul {
+    padding-left: 10px;
+    list-style: none;
+    font-size: 0.8em;
+}
+
+.mid-section ul li::before {
+    content: "-";
+    margin-right: 8px;
+}
+
+.mid-section h2,
+h1,
+a {
+    font-weight: 500;
+    font-size: 0.8em;
+    padding: 1em 1em;
+    margin: 0;
+}
+.projects h2 {
+    border-bottom: 1px solid black;
+}
+.mid-section p {
+    margin: 0;
+}
+.mid-section .style{
+    padding-top: 1em;
+    margin: 0;
+}
+a{
+    color: rgb(22, 133, 153);
+}
+
+.projects,
+.education,
+.work-experience {
+    border: 1px solid black;
+    /* padding: 1em; */
+}
+
+.work-experience p,
+.projects p {
+    border-bottom: 1px solid black;
+    /* position: relative;
+    left: -1em;
+    right: -1em;
+    width: calc(100% + 2em);
+    box-sizing: border-box; */
+
+}
+
+.review>h2 {
+    font-size: 1.2em;
+    padding: 10px 0 0px 35px;
+}
+
+.cards {
+    display: flex;
+    padding-left: 35px;
+    justify-content: flex-start;
+    gap: 20px;
+
+}
+
+.cards h3,
+p {
+    font-size: 0.8em;
+    margin-top: 0;
+}
+
+.cards p {
+    color: grey;
+}
+
+.cards>div {
+    border: 2px solid black;
+    border-radius: 35px;
+    width: 190px;
+    height: 140px;
+    padding: 1em;
+}
+
+footer {
+    text-align: center;
+    padding: 70px 0 20px 0;
+}
+
+footer h2 {
+    font-size: 1em;
+}
+.contact {
+    position: relative;
+    max-width: 710px;
+    width: 340%;
+    border-bottom: 1px solid black;
+    
+}
+.contact label, .contact input , .contact button {
+    display: block;
+    margin: 1em;
+}
+.contact button{
+    margin-bottom: 4em;
+}
+@media (max-width: 768px) {
+    .container {
+        min-width: 450px;
+    }
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    header div {
+        margin-top: 5px;
+        flex-direction: column;
+        gap: 0px;
+    }
+    header div p {
+        margin: 0;
+    }
+    nav>ul {
+        gap: 0px;
+        padding: 0;
+    }
+    nav ul a {
+        font-size: 0.9em;
+    }
+    .hero {
+        margin-top: 20px;
+        padding-bottom: 20px;
+    }
+    .hero h1 {
+        font-size: 1.5em;
+        margin: 0;
+    }
+    .hero p {
+        margin-top: 2px;
+    }
+    .mid-section {
+        grid-template-columns: 1fr;
+
+    }
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .mid-section h1 {
+        border-bottom: 1px solid black;
+        padding: 0 0 1em 1em;
+        text-align: center;
+    }
+    .projects h2 {
+        background-color: rgb(222, 247, 255);
+        text-align: center;
+    }
+    .work-experience div {
+        background-color: rgb(222, 247, 255);
+    }
+}
