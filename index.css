@@ -10,7 +10,7 @@ body {
 body {
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
     min-height: 100dvh;
     margin: 0;
 }
@@ -115,20 +115,25 @@ a {
     padding: 1em 1em;
     margin: 0;
 }
+
 .projects h2 {
     border-bottom: 1px solid black;
 }
-.projects h2:nth-of-type(5){
+
+.projects h2:nth-of-type(5) {
     border: none;
 }
+
 .mid-section p {
     margin: 0;
 }
-.mid-section .style{
+
+.mid-section .style {
     padding-top: 1em;
     margin: 0;
 }
-a{
+
+a {
     color: rgb(22, 133, 153);
 }
 
@@ -137,12 +142,14 @@ a{
 .work-experience {
     border: 1px solid black;
 }
+
 .work-experience div {
     padding-bottom: 1em;
 }
+
 .work-experience div:nth-of-type(1) {
     border-bottom: 1px solid black;
-    
+
 }
 
 .review>h2 {
@@ -184,70 +191,89 @@ footer {
 footer h2 {
     font-size: 1em;
 }
+
 .contact {
     position: relative;
     max-width: 710px;
     width: 340%;
     border-bottom: 1px solid black;
-    
+
 }
-.contact label, .contact input , .contact button {
+
+.contact label,
+.contact input,
+.contact button {
     display: block;
     margin: 1em;
 }
-.contact button{
+
+.contact button {
     margin-bottom: 4em;
 }
+
 @media (max-width: 768px) {
     .container {
         min-width: 450px;
     }
+
     header {
         flex-direction: column;
         align-items: center;
     }
+
     header div {
         margin-top: 5px;
         flex-direction: column;
         gap: 0px;
     }
+
     header div p {
         margin: 0;
     }
+
     nav>ul {
         padding: 0;
     }
+
     nav ul a {
         font-size: 0.9em;
     }
+
     .hero {
         margin-top: 20px;
         padding-bottom: 20px;
     }
+
     .hero h1 {
         font-size: 1.5em;
         margin: 0;
     }
+
     .hero p {
         margin-top: 2px;
     }
+
     .mid-section {
         grid-template-columns: 1fr;
 
     }
+
     .cards {
         flex-direction: column;
         align-items: center;
     }
+
     .mid-section h1 {
         border-bottom: 1px solid black;
         padding: 0 0 1em 1em;
         text-align: center;
     }
+
     .projects h2 {
         background-color: rgb(222, 247, 255);
         text-align: center;
     }
+
     .work-experience div {
         background-color: rgb(222, 247, 255);
     }
